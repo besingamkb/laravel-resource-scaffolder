@@ -2,9 +2,9 @@
 
 namespace Besingamkb\LaravelResourceScaffolder\Tests;
 
+use Besingamkb\LaravelResourceScaffolder\LaravelResourceScaffolderServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Besingamkb\LaravelResourceScaffolder\LaravelResourceScaffolderServiceProvider;
 
 class TestCase extends Orchestra
 {

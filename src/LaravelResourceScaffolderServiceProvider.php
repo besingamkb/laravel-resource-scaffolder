@@ -2,9 +2,9 @@
 
 namespace Besingamkb\LaravelResourceScaffolder;
 
+use Besingamkb\LaravelResourceScaffolder\Commands\LaravelResourceScaffolderCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Besingamkb\LaravelResourceScaffolder\Commands\LaravelResourceScaffolderCommand;
 
 class LaravelResourceScaffolderServiceProvider extends PackageServiceProvider
 {
