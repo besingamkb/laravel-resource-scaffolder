@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "besingamkb/laravel-resource-scaffolder",
+    "description": "Supercharge your Laravel development with effortless resource scaffolding. Generate controllers, models, requests, and resource files in seconds with a single Artisan command. Save time, eliminate boilerplate, and boost productivity - focus on crafting amazing applications.",
     "keywords": [
-        ":vendor_name",
+        "besingamkb",
         "laravel",
-        ":package_slug"
+        "laravel-resource-scaffolder"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/besingamkb/laravel-resource-scaffolder",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mark Kevin Besinga",
+            "email": "besingamkb@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,24 +30,23 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Besingamkb\\LaravelResourceScaffolder\\": "src/",
+            "Besingamkb\\LaravelResourceScaffolder\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Besingamkb\\LaravelResourceScaffolder\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-resource-scaffolder --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Besingamkb\\LaravelResourceScaffolder\\LaravelResourceScaffolderServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelResourceScaffolder": "Besingamkb\\LaravelResourceScaffolder\\Facades\\LaravelResourceScaffolder"
             }
         }
     },
